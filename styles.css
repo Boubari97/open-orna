@@ -16,27 +16,34 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-    background: #555;
-    color: white;
-    text-align: center;
-    padding: 0.5em 0;
+header h1 {
+    margin: 0;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 1em;
-    display: inline-block;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    background-color: #777;
+nav ul li a:hover {
+    color: #ccc;
 }
 
 .container {
@@ -48,7 +55,7 @@ nav a:hover {
 .post {
     background: #fff;
     margin-bottom: 2em;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
