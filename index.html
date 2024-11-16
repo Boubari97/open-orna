@@ -6,10 +6,11 @@
     <title>Игровой блог</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #333;
@@ -28,6 +29,7 @@
             text-decoration: none;
             padding: 1em;
             display: inline-block;
+            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #777;
@@ -41,11 +43,22 @@
             background: white;
             margin-bottom: 2em;
             padding: 1em;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .post h2 {
             margin-top: 0;
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .post a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .post a:hover {
+            text-decoration: underline;
         }
         footer {
             background: #333;
@@ -85,5 +98,4 @@
     <footer>
         <p>Copyright © 2023 Игровой блог</p>
     </footer>
-</body>
-</html>
+</
